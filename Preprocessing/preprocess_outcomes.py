@@ -1,29 +1,4 @@
-'''
-Lrasmy@Zhilab  Jan 2021
 
-# This script processes originally extracted data on a distributed platform
-# This code version create data with multiple labels for both survival and Binary classification can create files for a predefined split of patients or can randomly split
-# also it can build upon existing typoes dictionary or creates its own
-# and builds pickled lists including a full list that includes all information for case and controls
-## it outputs pickled list of the following shape
-#[[pt1_id,label,[
-#                  [[delta_time 0],[list of Medical codes in Visit0]],
-#                  [[delta_time between V0 and V1],[list of Medical codes in Visit2]],
-#                   ......]],
-# [pt2_id,label,[[[delta_time 0],[list of Medical codes in Visit0 ]],[[delta_time between V0 and V1],[list of Medical codes in Visit2]],......]]]
-#
-# for survival the label is a list [event_label,time_to_event]
-#
-# Usage: feed this script with Case file and Control files each is just a three columns like pt_id | medical_code | visit_date and execute like:
-#
-# python data_preprocessing_v4.py <data File> <Label File> <types dictionary if available,otherwise use 'NA' to build new one> <output Files Prefix> <path and prefix to pts file if available,otherwise use 'NA' to build new one>
-# you can optionally activate <case_samplesize> <control_samplesize> based on your cohort definition
-# This file will later split the data to training , validation and Test sets of ratio
-# Output files include
-# <output file>.pts: List of unique Patient ids. Created for validation and comparison purposes
-# <output file>.types: Python dictionary that maps string diagnosis codes to integer diagnosis codes.
-# Main output files for the baseline RNN models are <output file>.combined
-'''
 
 import sys
 from optparse import OptionParser
