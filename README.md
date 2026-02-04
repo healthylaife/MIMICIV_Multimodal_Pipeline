@@ -1,5 +1,5 @@
 # MIMICIV_Multimodal_Pipeline
-![MIMIC overview](images_v2/mimic_multimodal.png)
+![MIMIC overview](images_v2/mimic_framework_features.png)
 
 **MIMIC-IV Multimodal Pipeline**
 A MIMIC IV multimodal pipeline integrating multiple modalities, including structured data (e.g., vitals, labs, medications), unstructured data (e.g., clinical notes, radiology reports), waveforms (e.g., electrocardiogram signals), and imaging data (e.g., chest X-rays, echocardiograms). While each modality has been individually leveraged in prior research, these modalities remain disjointed in their storage and access, requiring extensive manual effort to preprocess and align them for downstream analysis. In this work, we introduce a comprehensive and customizable multimodal data processing pipeline for MIMIC-IV that systematically integrates five modalities.
