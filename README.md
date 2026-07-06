@@ -170,7 +170,7 @@ In your terminal, write the following command:
 		It can also be used as a standalone module.
 
 ### Temporal-Alignment
-
+![MIMIC temporal alignemnt](images_v2/mimic-temporal.png)
 
 ### How to use the pipeline?
 - After downloading the repo, open **mainPipeline.ipynb**.
