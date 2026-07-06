@@ -9,6 +9,7 @@ A MIMIC IV multimodal pipeline integrating multiple modalities, including struct
 - [Dataset access](#Dataset-access)
 - [Steps to download MIMIC-IV dataset for the pipeline](#Steps-to-download-MIMIC-IV-dataset-for-the-pipeline)
 - [Repository Structure](#Repository-Structure)
+- [Temporal Alignment](#Temporal-Alignment)
 - [How to use the pipeline?](#How-to-use-the-pipeline)
 
 
@@ -167,6 +168,9 @@ In your terminal, write the following command:
 	- **callibrate_output**
 		consists of code to calibrate model output.
 		It can also be used as a standalone module.
+
+### Temporal-Alignment
+
 
 ### How to use the pipeline?
 - After downloading the repo, open **mainPipeline.ipynb**.
